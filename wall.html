@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="wall.js"></script>
+    <link rel="stylesheet" href="wall.css">
+    <audio autoplay loop>
+        <source src="https://cdn.glitch.com/31ee53f6-c02d-47d3-87b9-b471abb98ddd%2FKen%20Smash%20Bros%20Ultimate%20Theme.mp3?v=1561562997198" type="audio/mpeg">
+    </audio>
+    <iframe src="https://cdn.glitch.com/31ee53f6-c02d-47d3-87b9-b471abb98ddd%2FKen%20Smash%20Bros%20Ultimate%20Theme.mp3?v=1561562997198" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+    <alert>
+        Guy was trying to get a hamburger when he noticed a great wall blocking him. So he did what any rational person would do: break it with his bare hands.
+    </alert>
+</head>
+<body>
+    <div id="gamebox">
+        <img src="https://cdn.glitch.com/31ee53f6-c02d-47d3-87b9-b471abb98ddd%2Fgrasstile3.0.png?v=1561568163044" id="ground">
+        <img src="https://cdn.glitch.com/31ee53f6-c02d-47d3-87b9-b471abb98ddd%2Fbrickwall.png?v=1561569579009" id="wall">
+        <img src="https://cdn.glitch.com/31ee53f6-c02d-47d3-87b9-b471abb98ddd%2Fidleboy.png?v=1561571222600" id="guy">
+    </div>
+    <br>
+    <button id="punch" type="button" onclick="punchWall(moneyearn)">
+        Punch
+    </button>
+
+    <button id="punchupgrade" type="button" onclick="punchUpgrade()">
+        Upgrade Punch: 10
+    </button>
+
+    <button id="moneyupgrade" type="button" onclick="moneyUpgrade()">
+        Upgrade Money: 50
+    </button>
+
+    <button id="autopuncher" type="button" onclick="autoBuy(); autoTimer()">
+        Buy an Autopuncher: 30
+    </button>
+
+    <button id="speedupgrade" type="button" onclick="speedBuy()">
+        Increase Autopuncher Speed: 70
+    </button>
+
+    <button id="apunchupgrade" type="button" onclick="autoUpgrade()">
+        Increase Autopuncher Damage: 80
+    </button>
+
+    <h3 id="wallHp"> 
+        HP: 1000000 
+    </h3>
+
+    <h3 id="damage">
+        Damage per Hit: 1
+    </h3>
+    <h3 id="money">
+        Money: 0
+    </h3>
+
+    <h3 id="moneyearn">
+        Money per Hit: 1
+    </h3>
+
+    <h3 id="autopunchers">
+        Autopunchers: 0
+    </h3>
+
+    <h3 id="autopunchspd">
+        Autopuncher Speed: 3 Seconds
+    </h3>
+
+    <h3 id="autopunchdmg">
+        Autopuncher Damage: 1
+    </h3>
+</body>
+</html>

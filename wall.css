@@ -1,0 +1,71 @@
+
+body 
+{
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-color: black;
+    text-align: center;
+}
+  
+h1 
+{
+    font-style: italic;
+    color: #373fff;
+}
+
+p, h3
+{
+    color: white;
+}
+
+#gamebox
+{
+    background-color:lightblue;
+    border:5px solid white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 700px;
+}   
+button
+{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-width: 5px;
+}
+
+button:hover
+{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#ground
+{
+    position: absolute;
+    left: 370px;
+    top: 317px;
+    width: 700px;
+    height: 140px;
+}
+
+#wall
+{
+    position: absolute;
+    left: 700px;
+    top: 55px;
+    width: 160px;
+    height: 300px;
+}
+
+#guy
+{
+    position: absolute;
+    left: 550px;
+    top: 160px;
+    width: 150px;
+    height: 200px;
+}
