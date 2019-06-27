@@ -32,7 +32,7 @@ function thingy(event) {
 
 function punchUpgrade(number)
 {
-    if(money > upgradecost)
+    if(money >= upgradecost)
     {
         money = money - upgradecost;
         upgradecost = upgradecost + (upgrademult)
@@ -46,7 +46,7 @@ function punchUpgrade(number)
 
 function moneyUpgrade(number)
 {
-    if(money > mupgradecost)
+    if(money >= mupgradecost)
     {
         money = money - mupgradecost;
         mupgradecost = mupgradecost + (mupgradecost / 2) + mupgrademult;
@@ -61,7 +61,7 @@ function moneyUpgrade(number)
 
 function autoBuy()
 {
-    if(money > apcost)
+    if(money >= apcost)
     {
         money = money - apcost;
         apcost = apcost + (apcost/2);
@@ -74,7 +74,7 @@ function autoBuy()
 
 function speedBuy()
 {
-    if(money > apscost)
+    if(money >= apscost)
     {
         money = money - apscost;
         apscost = apscost + (apscost/2);
@@ -88,7 +88,7 @@ function speedBuy()
 
 function autoUpgrade()
 {
-    if(money > apdcost)
+    if(money >= apdcost)
     {
         money = money - apdcost;
         apdcost = apdcost + (apdcost/2);
