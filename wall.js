@@ -107,7 +107,10 @@ function autoTimer()
 function autoPunchHit()
 {
     hp = hp - autopunchdamage;
+    money = money + moneyearn;
     document.getElementById("wallHp").innerHTML = "HP: " + hp;
+    document.getElementById("money").innerHTML = "Money: " + money;
+    
     if(hp < 0)
     {
         alert("With the mighty wall that stood in his way vanquished,\n Guy was finally free to go get a burger. You Win!");
